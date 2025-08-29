@@ -1,0 +1,225 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@theme {
+    --breakpoint-*: initial;
+    --breakpoint-mobile: 340px;
+    --breakpoint-tablet: 640px;
+    --breakpoint-laptop: 1100px;
+    --breakpoint-desktop: 1500px;
+}
+
+@font-face {
+  font-family: fontello;
+  src: url(/public/font/fontello/fontello.eot);
+  src: url(/public/font/fontello/fontello.ttf);
+  src: url(/public/font/fontello/fontello.woff);
+  src: url(/public/font/fontello/fontello.woff2);
+}
+@font-face {
+  font-family: shabnam;
+  src: url(/public/font/Shabnam/Shabnam.eot);
+  src: url(/public/font/Shabnam/Shabnam.ttf);
+  src: url(/public/font/Shabnam/Shabnam.woff);
+  src: url(/public/font/Shabnam/Shabnam.woff2);
+}
+
+@font-face {
+  font-family: Shabnam-FD;
+  src: url(/public/font/Shabnam-FD/Shabnam-FD.eot);
+  src: url(/public/font/Shabnam-FD/Shabnam-FD.ttf);
+  src: url(/public/font/Shabnam-FD/Shabnam-FD.woff);
+  src: url(/public/font/Shabnam-FD/Shabnam-FD.woff2);
+}
+
+@font-face {
+  font-family: Shabnam-MFD;
+  src: url(/public/font/Shabnam-Medium-FD/Shabnam-Medium-FD.eot);
+  src: url(/public/font/Shabnam-Medium-FD/Shabnam-Medium-FD.ttf);
+  src: url(/public/font/Shabnam-Medium-FD/Shabnam-Medium-FD.woff);
+  src: url(/public/font/Shabnam-Medium-FD/Shabnam-Medium-FD.woff2);
+}
+
+@font-face {
+  font-family: Shabnam-BFD;
+  src: url(/public/font/Shabnam-Bold-FD/Shabnam-Bold-FD.eot);
+  src: url(/public/font/Shabnam-Bold-FD/Shabnam-Bold-FD.ttf);
+  src: url(/public/font/Shabnam-Bold-FD/Shabnam-Bold-FD.woff);
+  src: url(/public/font/Shabnam-Bold-FD/Shabnam-Bold-FD.woff2);
+}
+
+@font-face {
+    font-family: Yekan;
+    src: url(../../public/font/fontello-Cqw191qV.woff2);
+    src: url(../../public/font/Shabnam-Bold-FD-B4xNpIWI.woff2);
+    src: url(../../public/font/Shabnam-FD-UqE7V9cL.woff2);
+    src: url(../../public/font/Shabnam-Medium-FD-CCYWnpK7.woff2);
+  }
+@font-face {
+    font-family: Icond;
+    src: url(../../public/font/fontello.woff2);
+  }
+:root {
+    --fontFamily: Yekan;
+    --fontFamily: Icond;
+}
+.icon-basket:before {
+    content: '\e820';
+}
+
+.icon-search-normal:before {
+    content: '\e806';
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ffff;
+    border: 1px solid #E2E8F0;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    font-size: 12px;
+    color: #8E8E8E;
+    font-weight: bold;
+
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ffff;
+    border: 1px solid #E2E8F0;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    font-size: 12px;
+    color: #8E8E8E;
+    font-weight: bold;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  color: black;
+}
+
+
+
+[class^="icon-"]:before, [class*=" icon-"]:before{
+    font-family: "Icond";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: 
+}
+
+
+.icon-searcher:before {
+  content: "\e913";
+  font-family: "fontello";
+}
+
+.icon-ok-circled2:before { content: '\e800'; } /* 'î €' */
+.icon-cancel-circled-outline:before { content: '\e801'; } /* 'î ' */
+.icon-home-outline:before { content: '\e802'; } /* 'î ‚' */
+.icon-up-open:before { content: '\e803'; } /* 'î ƒ' */
+.icon-attention:before { content: '\e804'; } /* 'î „' */
+.icon-info-circled:before { content: '\e805'; } /* 'î …' */
+.icon-search-normal:before { content: '\e806'; } /* 'î †' */
+.icon-bell:before { content: '\e807'; } /* 'î ‡' */
+.icon-heart-empty-1:before { content: '\e808'; } /* 'î ˆ' */
+.icon-heart-1:before { content: '\e809'; } /* 'î ‰' */
+.icon-instagram:before { content: '\e80a'; } /* 'î Š' */
+.icon-truck3:before { content: '\e80b'; } /* 'î ‹' */
+.icon-chevron-right:before { content: '\e80c'; } /* 'î Œ' */
+.icon-location5:before { content: '\e80d'; } /* 'î ' */
+.icon-wallet:before { content: '\e80e'; } /* 'î Ž' */
+.icon-mail:before { content: '\e80f'; } /* 'î ' */
+.icon-shop:before { content: '\e810'; } /* 'î ' */
+.icon-key:before { content: '\e811'; } /* 'î ‘' */
+.icon-back:before { content: '\e812'; } /* 'î ’' */
+.icon-list-nested:before { content: '\e813'; } /* 'î “' */
+.icon-equalizer:before { content: '\e814'; } /* 'î ”' */
+.icon-twitter:before { content: '\e815'; } /* 'î •' */
+.icon-paper-plane:before { content: '\e816'; } /* 'î –' */
+.icon-help-circled-alt:before { content: '\e817'; } /* 'î —' */
+.icon-picture:before { content: '\e818'; } /* 'î ˜' */
+.icon-print:before { content: '\e819'; } /* 'î ™' */
+.icon-eye:before { content: '\e81a'; } /* 'î š' */
+.icon-edit:before { content: '\e81b'; } /* 'î ›' */
+.icon-sort:before { content: '\e81c'; } /* 'î œ' */
+.icon-qrcode:before { content: '\e81d'; } /* 'î ' */
+.icon-star-empty:before { content: '\e81e'; } /* 'î ž' */
+.icon-user:before { content: '\e81f'; } /* 'î Ÿ' */
+.icon-basket:before { content: '\e820'; } /* 'î  ' */
+.icon-bell-1:before { content: '\e821'; } /* 'î ¡' */
+.icon-bullhorn:before { content: '\e822'; } /* 'î ¢' */
+.icon-share:before { content: '\e823'; } /* 'î £' */
+.icon-plus:before { content: '\e900'; } /* 'î¤€' */
+.icon-minus:before { content: '\e901'; } /* 'î¤' */
+.icon-check-box-on:before { content: '\e902'; } /* 'î¤‚' */
+.icon-check-box-of:before { content: '\e903'; } /* 'î¤ƒ' */
+.icon-history:before { content: '\e904'; } /* 'î¤„' */
+.icon-account-circle:before { content: '\e906'; } /* 'î¤†' */
+.icon-phone:before { content: '\e907'; } /* 'î¤‡' */
+.icon-gift:before { content: '\e908'; } /* 'î¤ˆ' */
+.icon-close:before { content: '\e909'; } /* 'î¤‰' */
+.icon-pen:before { content: '\e90a'; } /* 'î¤Š' */
+.icon-trash:before { content: '\e90b'; } /* 'î¤‹' */
+.icon-chevron-left:before { content: '\e90c'; } /* 'î¤Œ' */
+.icon-compare:before { content: '\e90d'; } /* 'î¤' */
+.icon-location:before { content: '\e90e'; } /* 'î¤Ž' */
+.icon-account:before { content: '\e90f'; } /* 'î¤' */
+.icon-clock:before { content: '\e910'; } /* 'î¤' */
+.icon-radio-button-on:before { content: '\e911'; } /* 'î¤‘' */
+.icon-radio-button-off:before { content: '\e912'; } /* 'î¤’' */
+.icon-search:before { content: '\e913'; } /* 'î¤“' */
+.icon-cart:before { content: '\e914'; } /* 'î¤”' */
+.icon-thumb-down:before { content: '\e915'; } /* 'î¤•' */
+.icon-thumb-up-outline:before { content: '\e916'; } /* 'î¤–' */
+.icon-thumb-up:before { content: '\e917'; } /* 'î¤—' */
+.icon-menu:before { content: '\e91f'; } /* 'î¤Ÿ' */
+.icon-arrow-right:before { content: '\e920'; } /* 'î¤ ' */
+.icon-arrow-left:before { content: '\e921'; } /* 'î¤¡' */
+.icon-arrow-up:before { content: '\e922'; } /* 'î¤¢' */
+.icon-arrow-down:before { content: '\e923'; } /* 'î¤£' */
+.icon-logout:before { content: '\e924'; } /* 'î¤¤' */
+.icon-check:before { content: '\e925'; } /* 'î¤¥' */
+.icon-arrow-square-left:before { content: '\e93a'; } /* 'î¤º' */
+.icon-box:before { content: '\e96f'; } /* 'î¥¯' */
+.icon-location-1:before { content: '\eadd'; } /* 'î«' */
+.icon-upload:before { content: '\f02f'; } /* 'ï€¯' */
+.icon-facebook:before { content: '\f09a'; } /* 'ï‚š' */
+.icon-angle-double-left:before { content: '\f100'; } /* 'ï„€' */
+.icon-angle-double-right:before { content: '\f101'; } /* 'ï„' */
+.icon-quote-left:before { content: '\f10d'; } /* 'ï„' */
+.icon-quote-right:before { content: '\f10e'; } /* 'ï„Ž' */
+.icon-circle:before { content: '\f111'; } /* 'ï„‘' */
+.icon-file-pdf:before { content: '\f1c1'; } /* 'ï‡' */
+.icon-file-excel:before { content: '\f1c3'; } /* 'ï‡ƒ' */
+.icon-bell-off:before { content: '\f1f7'; } /* 'ï‡·' */
+.icon-cart-arrow-down:before { content: '\f218'; } /* 'ïˆ˜' */
+.icon-whatsapp:before { content: '\f232'; } /* 'ïˆ²' */
+.icon-shopping-basket:before { content: '\f291'; } /* 'ïŠ‘' */
+.icon-percent:before { content: '\f295'; } /* 'ïŠ•' */
+.icon-telegram:before { content: '\f2c6'; } /* 'ï‹†' */
+.icon-linkedin:before { content: '\f318'; } /* 'ïŒ˜' */

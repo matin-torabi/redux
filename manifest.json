@@ -1,0 +1,17 @@
+{
+  "name": "فروشگاه اینترنتی دسترسی",
+  "short_name": "AwesomeApp",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0A5ABD",
+  "description": "A fantastic Progressive Web App!",
+  "id":"/",
+  "icons": [
+    {
+      "src": "./src/assets/favicon.svg",
+      "sizes": "800x800"
+    }
+  ]
+
+}
